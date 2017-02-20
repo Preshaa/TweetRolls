@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>Registration Page</title>
+		<link rel="stylesheet" type="text/css" href="Registration_login.css">
+	</head>
+	<body>
+    <div class="outer">
+      <header>Register</header>
+    	<div class="main">
+    		<form action="Registration.php" method="post">
+    			<label>Name</label>
+    			<input type="text" name="name" required="required"><br>
+    			<label>Email</label>
+    			<input type="email" name="email" required="required"><br>
+          <label>Password</label>
+          <input type="password" name="password" required="required"><br>
+          <label>Gender</label>
+          <select name="gender">
+           	<option>M</option>
+           	<option>F</option>
+          </select><br>
+    			<label>Tweet Handle</label>
+    			<input type="text" name="tweetHandle" required="required"><br>
+    			<input type="submit" name="submit" value="Submit">
+    		</form>
+    	</div>
+    </div>
+	</body>
+</html> 
