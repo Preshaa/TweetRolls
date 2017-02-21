@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+  <?php require 'Header_Footer.php'; ?>
   <html>
   <head>
     <title>Admin Portal</title>
@@ -29,7 +30,7 @@
         }
       }
     ?>
-    <header>Welcome <?php echo $user;?></header>
+    <header class="heading">Welcome <?php echo $user;?></header>
     <nav>
       <a href="ChangePassword.php">Change Password</a>
       <a href="Logout.php">Logout</a>

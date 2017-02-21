@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+  <?php require 'Header_Footer.php'; ?>
   <html>
     <head>
       <title>Tweet Rolls</title>
@@ -6,9 +7,6 @@
     </head>
     <body>
       <div>
-        <header>
-          <img src="images/twitter_picture.png">
-        </header>
         <div class="nav">
           <a href="Signup.php">Sign Up</a>
           <a href="UserLogin.php">Login</a>    
@@ -60,9 +58,6 @@
             <div>Total Count : <?php echo $counter; ?></div>
           </div>
         </div>
-        <footer>
-          <span>Copyright&copy;2017</span>
-        </footer>
       </div>
     </body>
   </html>

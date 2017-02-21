@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+  <?php require 'Header_Footer.php'; ?>
   <html>
     <head>
       <title>Change Password</title>
+      <link rel="stylesheet" type="text/css" href="Registration_login.css">
     </head>
     <body>
+      <div class="main">
       <form  method="post">
         <label>New Password</label>
         <input type="Password" name="Password">
         <input type="submit" name="submit" value="submit">
       </form>
+      </div>
       <?php
         if (isset($_POST['submit'])) {
           $password = $_POST['Password'];

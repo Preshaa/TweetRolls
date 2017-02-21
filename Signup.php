@@ -11,6 +11,7 @@
   }
 ?>
 <!DOCTYPE html>
+  <?php require 'Header_Footer.php'; ?>
   <html>
     <head>
       <title>Registration Page</title>
@@ -18,7 +19,7 @@
     </head>
     <body>
       <div class="outer">
-        <header>Register</header>
+        <header class="header">Register</header>
         <div class="main">
           <form  method="post">
             <label>Name</label>
@@ -36,6 +37,8 @@
             <input type="text" name="tweetHandle"><br>
             <input type="submit" name="submit" value="Submit">
           </form>
+          <label>Already registered?</label>
+          <a href="UserLogin.php">Login</a>
         </div>
       </div>
     </body>
