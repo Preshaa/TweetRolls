@@ -1,53 +1,53 @@
 .main {
-	position: absolute;
-	top: 30%;
-	left: 30%;
-	width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
 }
 
 label {
-	margin:2%;
-	display: inline-block;
-	width: 40%;
-	color: blue;
+  margin:2%;
+  display: inline-block;
+  width: 40%;
+  color: blue;
 }
 
 input {
-	width: 52%;
-	padding: 2px;
-	border: 1px solid blue;
-	background-color: #f2f2f2;
-	border-radius: 10px;
+  width: 52%;
+  padding: 2px;
+  border: 1px solid blue;
+  background-color: #f2f2f2;
+  border-radius: 10px;
 }
 
 select {
-	padding: 2px;
-	border: 1px solid blue;
-	background-color: #f2f2f2;
-	border-radius: 10px;
+  padding: 2px;
+  border: 1px solid blue;
+  background-color: #f2f2f2;
+  border-radius: 10px;
 }
 
 input[type="submit"] {
-	width: 98%;
-	font-size: 150%;
-	background-color: blue;
-	border-radius: 10px;
-	border: white;
-	margin-top: 1%;
-	color: white;
+  width: 98%;
+  font-size: 150%;
+  background-color: blue;
+  border-radius: 10px;
+  border: white;
+  margin-top: 1%;
+  color: white;
 }
 
 header {
-	position: absolute;
-	left: 44%;
-	top: 10%;
-	font-size: 300%;
+  position: absolute;
+  left: 44%;
+  top: 10%;
+  font-size: 300%;
 }
 
 input[type="submit"]:hover {
-	background-color: white;
-	border-radius: 10px;
-	border: 1px solid blue;
-	color: blue;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid blue;
+  color: blue;
 }
 
