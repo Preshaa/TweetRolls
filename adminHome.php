@@ -13,13 +13,17 @@
         <input type="submit" value="Set" name="submit">
       </form>
     </div>
-    <?php  
+    <?php
+      /**
+       * After Changing Password.
+       */  
       session_start();
       $user=$_SESSION['user'];
       $msg = $_GET['msg'];
       echo $msg;
     ?>
-    <?php 
+    <?php
+      // Updating hashtag on click on submit button. 
       if (isset($_POST['submit'])) {
         if (!empty($_POST['hashtag'])) {
           header('Location: setHash.php');

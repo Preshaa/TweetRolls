@@ -11,7 +11,7 @@
     echo "Error: " . $queryV . "<br>" . mysqli_error($conn);
   }
 
-  // Updating Since_id.
+  // Updating Since_id to 0 initialy.
   $queryID = "Update variable set value='" . $since_id . "' where name='SINCE_ID'";
   if (mysqli_query($conn, $queryID)) {
     $flag+=1;
