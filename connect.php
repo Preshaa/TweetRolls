@@ -1,4 +1,7 @@
 <?php
+  /**
+   * Credentials to connect to database.
+   */
   $servername = "localhost";
 	$username = "root";
 	$password = "mosobabu";
