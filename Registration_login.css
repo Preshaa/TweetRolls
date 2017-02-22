@@ -1,6 +1,6 @@
 .main {
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 30%;
   width: 40%;
 }
@@ -37,10 +37,10 @@ input[type="submit"] {
   color: white;
 }
 
-header {
+header.header {
   position: absolute;
   left: 44%;
-  top: 10%;
+  top: 25%;
   font-size: 300%;
 }
 
