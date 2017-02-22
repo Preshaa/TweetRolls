@@ -35,9 +35,5 @@
       }
     ?>
     <header class="heading">Welcome <?php echo $user;?></header>
-    <nav>
-      <a href="ChangePassword.php">Change Password</a>
-      <a href="Logout.php">Logout</a>
-    </nav>
   </body>
 </html>

@@ -7,10 +7,6 @@
     </head>
     <body>
       <div>
-        <div class="nav">
-          <a href="Signup.php">Sign Up</a>
-          <a href="UserLogin.php">Login</a>    
-        </div>
         <div>
           <div>
             <table>
