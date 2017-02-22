@@ -1,0 +1,39 @@
+body {
+  background-image: url('images/background.jpg');
+  background-repeat: repeat-y;
+}
+
+header.logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+}
+
+input,a {
+  outline: none;
+}
+
+a.img{
+  position: absolute;
+  top: 0;
+  left: 35%;
+  right: 35%;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #4993be;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  display: block;
+}
+
+span {
+  position: absolute;
+  left: 44%;
+  bottom: 5%; 
+}

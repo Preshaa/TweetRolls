@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+  <?php require 'Header_Footer.php'; ?>
   <html>
     <head>
       <title>Login Portal</title>
       <link rel="stylesheet" type="text/css" href="Registration_login.css">
     </head>
     <body>
-      <header>Login</header>
+      <header class="header">Login</header>
       <div class="main">
         <form method="post">
           <label>User ID</label>
@@ -14,7 +15,7 @@
           <input type="password" name="password"><br>
           <input type="submit" name="Login" value="Login">
           <label>Not registered?</label>
-          <a href="Registration.html">Register</a>
+          <a href="Signup.php">Register</a>
         </form>
         <?php
         include "validation.php";
@@ -23,12 +24,12 @@
           session_start();
           if (! empty($_SESSION['roll'])) {
             echo $_SESSION["roll"];
-              if ($_SESSION["roll"]=="admin") {
-                header('Location: adminHome.php');
-              }
-              else if ($_SESSION["roll"]=="user") {
-                header('Location: UserHome.php');
-              }
+            if ($_SESSION["roll"]=="admin") {
+            header('Location: adminHome.php');
+            }
+            else if ($_SESSION["roll"]=="user") {
+              header('Location: UserHome.php');
+            }
           }
 
           // On click on Login button.
