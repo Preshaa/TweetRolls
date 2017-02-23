@@ -43,6 +43,7 @@
               if (check_email($email)) {
                 if (!empty($password)) {
                   $hashPwd= md5($password);
+                  
                   $sql = "SELECT name, email, password, roll FROM user where email='".$email."' and password='".$hashPwd."'";
                   $result = mysqli_query($conn, $sql);
                   if (mysqli_num_rows($result)> 0) {
@@ -63,22 +64,23 @@
                     }
                   }
                   else {
-                    echo "username or password is wrong!!";
+                    $error = "username or password is wrong!!";
                   }
                 }
                 else {
-                  echo "Enter Password";
+                  $error = "Enter Password";
                 }
               }
               else {
-                echo "Enter valid email address";
+                $error = "Enter valid email address";
               }
             }
             else {
-              echo "Enter Email";
+              $error = "Enter Email";
             }
           }
         ?>
+        <label class="error"><?php if (isset($error)) { echo $error; } ?></label>
       </div>
     </body>
   </html>

@@ -12,6 +12,11 @@ label {
   color: #5FCFF5;
 }
 
+label.error {
+  left: 10%;
+  color: red;
+}
+
 input {
   width: 52%;
   padding: 2px;
@@ -51,4 +56,5 @@ input[type="submit"]:hover {
   border: 1px solid #5FCFF5;
   color: #5FCFF5;
 }
+
 

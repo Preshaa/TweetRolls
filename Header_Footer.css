@@ -19,6 +19,10 @@ header.hidden {
   visibility: hidden;
 }
 
+nav.right_top a#hidden {
+  display: none;
+}
+
 input,a {
   outline: none;
 }
