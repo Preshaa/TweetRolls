@@ -27,6 +27,7 @@
       // Updating hashtag on click on submit button. 
       if (isset($_POST['submit'])) {
         if (!empty($_POST['hashtag'])) {
+          $_SESSION['hashtag'] = $_POST['hashtag'];
           header('Location: setHash.php');
         }
         else {
@@ -35,9 +36,5 @@
       }
     ?>
     <header class="heading">Welcome <?php echo $user;?></header>
-    <nav>
-      <a href="ChangePassword.php">Change Password</a>
-      <a href="Logout.php">Logout</a>
-    </nav>
   </body>
 </html>

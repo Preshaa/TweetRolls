@@ -7,10 +7,6 @@
     </head>
     <body>
       <div>
-        <div class="nav">
-          <a href="Signup.php">Sign Up</a>
-          <a href="UserLogin.php">Login</a>    
-        </div>
         <div>
           <div>
             <table>
@@ -20,7 +16,6 @@
                 <th>Count</th>
               </tr>
               <?php
-                session_start();
                 if (! empty($_SESSION['roll'])) {
                   echo $_SESSION["roll"];
                   if ($_SESSION["roll"]=="admin") {
