@@ -2,12 +2,23 @@
   require "connect.php";
   require_once('TwitterAPIExchange.php');
 
+  // To retrieve Outh Tokens.
+  $hashquery = "SELECT outh_access_token, outh_access_token_secret, consumer_key, consumer_secret FROM Outh_Tokens";
+  $result = mysqli_query($conn, $hashquery);
+  if (mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result) ;
+    $oauth_access_token = $row['outh_access_token'];
+    $oauth_access_token_secret = $row['outh_access_token_secret'];
+    $consumer_key = $row['consumer_key'];
+    $consumer_secret = $row['consumer_secret'];
+  }
+  
   // Access Tokens to connect twitter api.
   $settings = array(
-      'oauth_access_token' => "2492829842-BFvyliEJoWuJsDdmc4UyYHt71hQYiEiv8DAVT9n",
-      'oauth_access_token_secret' => "ZzDHss3Igk73cwZ2JjoXS4K9NafH7m9CMQnqpL5GSQZIJ",
-      'consumer_key' => "Ue8JJ4RmlwacPEGxF3AU6TsqV",
-      'consumer_secret' => "uDnGY65f2c7gQaxwSkWbOkXSnVyFvrtILR9GmhFp2fP9pTBhrz"
+      'oauth_access_token' => $oauth_access_token,
+      'oauth_access_token_secret' => $oauth_access_token_secret,
+      'consumer_key' => $consumer_key,
+      'consumer_secret' => $consumer_secret
   );
 
   // To retrieve hashtag.
@@ -36,6 +47,9 @@
   $string = json_decode($twitter->setGetfield($getfield)
   ->buildOauth($url, $requestMethod)
   ->performRequest(),$assoc = TRUE);
+
+  $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+  fwrite($myfile, json_encode($string));
 
   // Updating Since_ID from new tweets.
   if(isset($string['statuses'][0]['id'])==TRUE) {

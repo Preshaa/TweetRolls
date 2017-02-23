@@ -15,8 +15,12 @@ header.logo {
   height: 30%;
 }
 
-header.hidden {
+.hidden {
   visibility: hidden;
+}
+
+nav.right_top a#hidden {
+  display: none;
 }
 
 input,a {

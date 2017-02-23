@@ -16,7 +16,6 @@
                 <th>Count</th>
               </tr>
               <?php
-                session_start();
                 if (! empty($_SESSION['roll'])) {
                   echo $_SESSION["roll"];
                   if ($_SESSION["roll"]=="admin") {
